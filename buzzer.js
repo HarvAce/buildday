@@ -17,6 +17,23 @@ board.on("ready", function(){
     
     // Play a song
     // HINT: There are many different songs you can play
+    //      beethovens-fifth
+    //      claxon
+    //      do-re-mi
+    //      doorbell
+    //      funeral-march-short
+    //      jingle-bells-short
+    //      jingle-bells
+    //      mario-fanfare
+    //      mario-intro
+    //      never-gonna-give-you-up
+    //      nyan-intro
+    //      nyan-melody
+    //      pew-pew-pew
+    //      starwars-theme
+    //      tetris-theme
+    //      wedding-march
+    // HINT: Replace this with any song you want to play
     var song = songs.load("jingle-bells");
     buzzer.play(song);
 })

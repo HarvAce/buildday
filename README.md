@@ -6,6 +6,7 @@ These are demos of every Intel Edison Internet of Things Grove kit sensor for us
 Sensor Examples
 ------------
 
+In every kit
 * Motion Sensor
 * Ultraviolet Light Sensor
 * Moisture Sensor
@@ -18,6 +19,16 @@ Sensor Examples
 * Relay
 * Rotary Angle Encoder
 
+Extras to share across kits
+* Accelerometer
+* Collision Sensor
+* GPS
+* LED (blue, red, and green)
+* Sound Sensor
+* Temperature Sensor
+* Touch Sensor
+* Ultrasonic Ranger
+* Vibration Sensor
 
 Startup File
 -------------------
