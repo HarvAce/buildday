@@ -15,6 +15,7 @@
 *.sass-cache
 *.xdk
 *.xdke
+*.png
 
 # various OS and editor folders
 .DS_Store
