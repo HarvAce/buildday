@@ -52,3 +52,6 @@ Dependencies
 * johnny-five
 * j5-songs
 * edison-io
+* jsupm_groveultrasonic - for ultrasonic ranger sensor only
+* jsupm_collision - for collision sensor only
+* jsupm_nmea_gps - for GPS only
