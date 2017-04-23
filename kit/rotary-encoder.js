@@ -9,16 +9,15 @@ var board = new five.Board({
 
 // When the Intel Edison is ready...
 board.on("ready", function() {
-    
+
     // Setup the ultraviolet light sensor in analog port 0
     // HINT: You can plug the ultraviolet light sensor into any other analog port and change the number 0 below
-    var light = new five.Light("A0");
-    
-    // When the light level changes...
-    // NOTE: You need to go outside or have some other UV light to see the reading change
-    light.on("change", function() {
-        // Display the light level in the console
+    var rotary = new five.Sensor("A0");
+
+    // When the rotary encoder is turned...
+    rotary.scale(0, 255).on("change", function() {
+        // Display the turn value in the console
         // HINT: Replace this with any action you want to take
-        console.log(this.level);
+        console.log(this.value);
     });
 });
