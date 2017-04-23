@@ -1,6 +1,6 @@
 {
   "name": "iot-build-day",
-  "description": "",
+  "description": "These are demos of every Intel Edison Internet of Things Grove kit sensor for use during build days.",
   "version": "0.0.0",
   "main": "main.js",
   "engines": {
