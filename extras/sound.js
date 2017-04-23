@@ -15,9 +15,9 @@ board.on("ready", function() {
     var mic = new five.Sensor("A0");
 
     // When sound is detected...
-    mic.on("data", function() {
-        // Display sound detected in the console
+    mic.on("data", function(value) {
+        // Display the amount of sound detected in the console
         // HINT: Replace this with any action you want to take
-        console.log("sound detected");
+        console.log(value);
     });
 });

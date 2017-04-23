@@ -3,6 +3,8 @@ Intel Edison Build Day Demos
 
 These are demos of every Intel Edison Internet of Things Grove kit sensor for use during build days.  All examples are written in Node.js.
 
+Copy all of these files into your buildday folder that the Intel XDK project created.  If you called your project something other than buildday, copy into that folder instead.
+
 Sensor Examples
 ------------
 

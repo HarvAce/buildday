@@ -1,16 +1,17 @@
 {
-  "name": "xdk-iot-blank-template",
-  "description": "Intel® XDK IoT Blank Node.js Template",
+  "name": "iot-build-day",
+  "description": "",
   "version": "0.0.0",
   "main": "main.js",
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "BSD-3-Clause",
-  "private": true,
   "dependencies": {
       "johnny-five": "latest",
       "edison-io": "latest",
-      "j5-songs": "latest"
+      "j5-songs": "latest",
+      "jsupm_groveultrasonic": "latest",
+      "jsupm_collision": "latest",
+      "jsupm_nmea_gps": "latest"
   }
 }

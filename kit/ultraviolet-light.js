@@ -15,6 +15,7 @@ board.on("ready", function() {
     var light = new five.Light("A0");
     
     // When the light level changes...
+    // NOTE: You need to go outside or have some other UV light to see the reading change
     light.on("change", function() {
         // Display the light level in the console
         console.log(this.level);

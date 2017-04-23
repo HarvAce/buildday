@@ -1,23 +1,41 @@
 // Setup dependencies
-var five = require("johnny-five");
-var Edison = require("edison-io");
+var collision = require("jsupm_collision");
 
-// Setup the Intel Edison
-var board = new five.Board({
-  io: new Edison()
-});
+// Setup the collision sensor in digital port 6
+// HINT: You can plug the collision sensor into any other digital port and change the number 6 below
+var sensor = new collision.Collision(6);
 
-// When the Intel Edison is ready...
-board.on("ready", function() {
+// Setup the default that there is no collision
+var collisionState = false;
+console.log("No collision");
 
-    // Setup the collision sensor in digital port 6
-    // HINT: You can plug the collision sensor into any other digital port and change the number 6 below
-    var sensor = new five.Sensor("6");
-
-    // When the sensor value changes...
-    sensor.on("change", function(value) {
-        // Display the value in the console
+// Check for a collision every 1 millisecond
+var myInterval = setInterval(function()
+{
+    // When a collision is detected...
+	if (sensor.isColliding() && !collisionState)
+	{
+        // Display collision in the console
         // HINT: Replace this with any action you want to take
-        console.log(value);
-    });
+		console.log("collision");
+		collisionState = true;
+	}
+    // When there is no collision detected...
+	else if (!sensor.isColliding() && collisionState)
+	{
+        // Display no collision in the console
+        // HINT: Replace this with any action you want to take
+		console.log("no collision");
+		collisionState = false;
+	}
+}, 1);
+
+// Stop the interval when you stop the program
+process.on('SIGINT', function()
+{
+	clearInterval(myInterval);
+	sensor = null;
+	collision.cleanUp();
+	collision = null;
+	process.exit(0);
 });
