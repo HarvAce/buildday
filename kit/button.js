@@ -17,12 +17,14 @@ board.on("ready", function() {
     // When the button is pressed...
     button.on("press", function() {
         // Display button pressed in the console
+        // HINT: Replace this with any action you want to take
         console.log("button pressed");
     });
 
     // When the button is released...
     button.on("release", function() {
         // Display button released in the console
+        // HINT: Replace this with any action you want to take
         console.log("button released");
     });
 });

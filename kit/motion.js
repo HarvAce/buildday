@@ -25,12 +25,14 @@ board.on("ready", function() {
     // When motion is detected...
     motion.on("motionstart", function() {
         // Display motionstart in the console
+        // HINT: Replace this with any action you want to take
         console.log("motionstart");
     });
 
     // When no more motion is detected...
     motion.on("motionend", function() {
         // Display motionend in the console
+        // HINT: Replace this with any action you want to take
         console.log("motionend");
     });
 });

@@ -21,6 +21,7 @@ board.on("ready", function() {
     // When the rotary encoder is turned...
     rotary.scale(0, 180).on("change", function() {
         // Move the servo motor to that position
+        // HINT: Replace this with any action you want to take
         servo.to(this.value);
     });
 });

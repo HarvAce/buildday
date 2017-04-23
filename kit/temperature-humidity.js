@@ -20,9 +20,11 @@ board.on("ready", function() {
     // When the temperature or humidity change...
     multi.on("change", function() {
         // Display the temperature in the console
+        // HINT: Replace this with any action you want to take
         console.log("Temperature (F): ", this.thermometer.fahrenheit);
     
         // Display the humidity in the console
+        // HINT: Replace this with any action you want to take
         console.log("Relative humidity : ", this.hygrometer.relativeHumidity);
   });
 });

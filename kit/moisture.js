@@ -22,9 +22,11 @@ board.on("ready", function() {
         // If a higher level of moisture is detected...
         if (this.value < 20) {
             // Display happy plant in the console
+            // HINT: Replace this with any action you want to take
             console.log("happy plant")
         } else {
             // Display sad plant in the console
+            // HINT: Replace this with any action you want to take
             console.log("sad plant")
         }
     });
