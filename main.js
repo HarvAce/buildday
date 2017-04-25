@@ -14,6 +14,6 @@ board.on("ready", function() {
     // Write your own Internet of Things toy here
     // If this happens, then that happens
     // HINT: Copy and paste code from sensor examples to get started
-    console.log("Hello Eddy!")
+    console.log("Hello Eddy!");
     
 });
